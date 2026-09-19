@@ -2,7 +2,7 @@
 
 Understand what changed between two CSV exports without comparing spreadsheets cell by cell.
 
-## MVP
+## Release candidate
 
 - Upload an older and newer CSV.
 - Files are parsed locally in the browser; file contents are not uploaded to a backend.
@@ -12,6 +12,7 @@ Understand what changed between two CSV exports without comparing spreadsheets c
 - Produces deterministic human-readable insights for frequently changed and numeric columns.
 - Downloads a CSV change report.
 - Responsive, dependency-free static site.
+- Handles malformed CSV structure, quoted multiline fields, delimiter detection, duplicate/blank keys, hostile HTML-like cell values, and spreadsheet-formula-safe report export.
 
 ## Run locally
 
@@ -19,7 +20,7 @@ Open `index.html` in a modern browser. No build step or dependencies are require
 
 ## Current scope
 
-This first version supports CSV. XLSX support, richer explanations, large-file optimizations and optional AI summaries can be evaluated after validating real usage.
+This release candidate supports CSV and has been regression-tested across large files, schema changes, malformed input, multiline quoted fields, key-safety cases, hostile cell content and repeated state changes. XLSX support, richer explanations and optional AI summaries can be evaluated after validating real usage.
 
 ## Product direction
 

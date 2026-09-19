@@ -24,7 +24,7 @@
 <p id="status" class="status">Choose two CSV files to begin.</p>
 </section>
 <section id="results" class="results hidden">
-<div class="result-head"><div><p id="summaryEyebrow" class="eyebrow">YOUR CHANGE SUMMARY</p><h2 id="summaryTitle">Here's what changed.</h2></div><button id="downloadBtn" class="secondary">Download report CSV</button></div>
+<div class="result-head"><div><p id="summaryEyebrow" class="eyebrow">YOUR CHANGE SUMMARY</p><h2 id="summaryTitle">Here's what changed.</h2></div><div class="export-actions"><button id="downloadChangesBtn" class="secondary">Download changes only</button><button id="downloadBtn" class="secondary">Download full report</button></div></div>
 <div class="cards"><article><b id="addedCount">0</b><span id="addedLabel">Added</span></article><article><b id="removedCount">0</b><span id="removedLabel">Removed</span></article><article><b id="modifiedCount">0</b><span id="modifiedLabel">Modified</span></article><article><b id="unchangedCount">0</b><span id="unchangedLabel">Unchanged</span></article></div>
 <div id="insights" class="insights"></div>
 <div class="table-wrap"><table><thead><tr><th id="statusHeader">Status</th><th id="recordHeader">Record</th><th id="changesHeader">Changes</th></tr></thead><tbody id="diffRows"></tbody></table></div>
@@ -32,5 +32,5 @@
 <section class="why"><div><p id="privacyEyebrow" class="eyebrow">PRIVACY FIRST</p><h2 id="privacyTitle">Your data stays yours.</h2></div><p id="privacyText">Your CSV files are read, matched and compared inside your browser. What Changed? does not upload your CSV contents to a backend.</p></section>
 </main>
 <footer id="footerText">What Changed? · Private CSV comparison in your browser.</footer>
-<script src="app.js?v=20260919-i18n"></script>
+<script src="app.js?v=20260919-changes-export"></script>
 </body></html>

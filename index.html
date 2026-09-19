@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Compare two CSV files privately in your browser and understand what changed.">
   <title>What Changed? — Understand spreadsheet changes</title>
+  <script>
+  (()=>{try{const saved=localStorage.getItem('wc-theme');const dark=saved?saved==='dark':matchMedia('(prefers-color-scheme: dark)').matches;document.documentElement.dataset.theme=dark?'dark':'light'}catch(e){}})();
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="site-header"><a class="brand" href="./">What Changed?</a><span class="privacy-pill">🔒 Files stay on your device</span></header>
+<header class="site-header"><a class="brand" href="./">What Changed?</a><div class="header-actions"><span class="privacy-pill">🔒 Files stay on your device</span><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true">🌙</span><span class="theme-label">Dark</span></button></div></header>
 <main>
 <section class="hero"><p class="eyebrow">PRIVATE CSV COMPARISON</p><h1>Stop comparing spreadsheets <span>cell by cell.</span></h1><p class="lede">Drop a before and after CSV. What Changed? matches the same records across both files and shows what was added, removed, modified and unchanged.</p><div class="trust-row"><span>🔒 Files stay on your device</span><span>✓ No signup</span><span>✓ CSV contents are not uploaded</span></div></section>
 <section class="tool" aria-label="CSV comparison tool">

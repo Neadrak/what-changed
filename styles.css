@@ -15,3 +15,5 @@ body,.tool,.results,.drop,.privacy-pill,.theme-toggle,.settings select,.cards ar
 @media(max-width:720px){.header-actions{gap:7px}.privacy-pill{display:none}.theme-toggle{min-width:auto}.theme-label{display:none}}
 
 .language-control{display:inline-flex;align-items:center;gap:5px;padding:6px 9px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;font-size:13px;font-weight:750}.language-select{appearance:none;border:0;background:transparent;color:var(--ink);font:inherit;font-weight:800;cursor:pointer;outline:none;padding:0 2px}.language-select option{background:var(--surface);color:var(--ink)}.hero h1 .title-main{color:var(--ink)}@media(max-width:720px){.language-control{padding:7px 9px}}
+
+.export-actions{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}@media(max-width:720px){.export-actions{width:100%}.export-actions button{flex:1 1 190px}}
